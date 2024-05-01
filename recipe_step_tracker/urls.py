@@ -1,4 +1,4 @@
-"""web_project URL Configuration
+"""recipe_step_tracker URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -18,7 +18,6 @@ from django.urls import include, path
 from recipe_step_tracker_api import urls as recipe_step_urls
 
 urlpatterns = [
-    path("", include("hello.urls")),
     path('admin/', admin.site.urls),
     path("api/", include(recipe_step_urls))
 ]
